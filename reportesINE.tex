@@ -1,0 +1,49 @@
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{imakeidx}
+\usepackage{graphicx} %paquete img
+\usepackage{subfiles} %paquete export
+\usepackage{multirow} %paquete tablas
+\makeindex[columns=3, title=Alphabetical Index, intoc]
+
+% tamanio de letra
+\usepackage{scrextend}
+\changefontsizes[14pt]{12pt}
+
+% renombre de variables
+\renewcommand{\contentsname}{Cotenido}
+\renewcommand{\figurename}{Imagen} 
+
+\begin{document}
+ 
+\tableofcontents
+
+\clearpage
+ 
+\section{Introducción}
+\subfile{section/introduccion}
+\clearpage
+
+\section{Análisis de los requerimientos del módulo}
+\subfile{section/analisisRequerimientos}
+\clearpage
+
+\section{Diseño}
+\subfile{section/disenio}
+\clearpage
+
+\section{Generación de código}
+\subfile{section/generacionCodigo}
+\clearpage
+
+\section{Funcionamiento y pruebas}
+\subfile{section/pruebas}
+\clearpage
+
+\section{Conclusión}
+\subfile{section/conclusion}
+\clearpage
+
+\printindex
+\end{document}

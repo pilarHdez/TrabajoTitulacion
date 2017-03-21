@@ -1,0 +1,88 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{anysize}
+\marginsize{3cm}{2cm}{2cm}{2cm}
+
+\title{Reporte trabajo profesional: \\ "Desarrollo de un módulo genérico de reportes dinámicos usando PrimeFaces"}
+\author{María del Pilar Hernández Bastida\\
+        Tutor: Dra. Amparo López Gaona \\
+        Institución: \textbf{Instituto Nacional Electoral (INE)} \\
+        Cargo: \textbf{Profesional en Desarrollo de Software}}
+\date{8 de febrero 2017}
+
+
+
+\begin{document}
+
+\maketitle
+
+
+\section{Descripción}
+Como \textit{Profesional en Desarrollo de Software} en el \textit{Instituto Nacional Electoral, INE}. Mis funciones son: Analizar, diseñar y construir los sistemas de información, con base en la arquitectura establecida, tomando en cuenta las necesidades de los usuarios y las normas del Instituto; con la finalidad de desarrollar sistemas de calidad, siguiendo los patrones de diseño y estándares de desarrollo de software establecidos en el \textit{Sistema de Gestión de Telecomunicaciones de la Información y Comunicaciones (SIGETIC)}. \\ \\
+En el mes de Junio del año 2016 dejaron a mi cargo la implementación de un generador de reportes. La Dirección Jurídica solicitó un módulo, para el \textit{Sistema Integral de la Dirección Jurídica}, que le permita la generación de reportes de los procedimientos que son tramitados ante la Dirección, los cuales abarcaran los procedimientos que atiende: la Dirección de lo Contencioso, la Dirección de Normatividad y Contratos, la Dirección de Instrucción Recursal y la Dirección de Asuntos Laborales.
+
+
+\section{Actividades desarrolladas}
+Haciendo un análisis de las bases de datos de los diferentes  sistemas  de la \textit{Dirección Jurídica} obtuve la información relevante para los reportes solicitados y agrupe dichos datos en vistas. \\ \\
+Revisando el módulo de reportes del \textit{Sistema Integral de Medios de Impugnación} obtuve una idea más clara del requerimiento solicitado, entendiendo el comportamiento esperado del software y su interacción con los usuarios. \\ \\
+Una vez que se entendió por completo el funcionamiento esperado, diseñe los diagramas necesarios para la descripción de las interacciones entre las entidades del sistema y su secuenciado, acoplando el módulo a la arquitectura ya establecida. La programación del módulo fue elabora en el lenguaje de programación Java teniendo como frameworks: \textit{Spring}, como framework de desarrollo de aplicación y \textit{PrimeFaces} para la vista de la aplicación. \\ \\
+Dado que el requerimiento implicaba un desarrollo para reportes de cada dirección, son su propio sistema, desarrollé un módulo aplicable a todos los procesos de la dirección para reportes dinámicos, permitiendo al usuario hacer búsquedas exactas sobre diferentes campos, rangos de fechas y categorías además es posible seleccionar  las columnas que el usuario considere relevantes para cada reporte y hacer exportaciones a Excel.\\ \\
+
+\section{Justificación e importancia del tema en relación con la práctica de la profesión}
+Cuando no se tiene la libertad de hacer consultas a la base de datos perdemos la flexibilidad de generar reportes a la medida y en cierta medida se pierde uno de los objetivos que tiene el almacenar los datos en una base, que es la explotación de la información. Bajo esta idea, el que no se le pueda extraer la información ingresada al sistema no es una buena opción. \\ \\
+Por otro lado, algunos de los datos almacenados en la base son para el buen funcionamiento del sistema y no son de importancia para el usuario final. Con la arquitectura planteada en el desarrollo de este módulo se tiene la libertad de seleccionar que datos de la base son mostrados.\\ \\
+Con el desarrollo del módulo genérico de reportes se ha logrado hacer más eficiente la implementación de futuros módulos de reporte para cualquier sistema, permitiendo que sólo los datos de importancia para el usuario sean explotados y sea de fácil manejo para cualquiera que lo desee utilizar. \\ \\
+El profesional de Ciencias de la Computación cuenta con la capacidad, habilidad y destreza del desarrollo de mecanismos efectivos para resolver problemas computacionales, considero pertinente el reporte de este módulo como ejemplo claro de un buen desarrollo computacional.
+
+
+\section{Bibliografía}
+\begin{itemize}
+\item Software Engineering: Seventh Edition, Ian Sommerville. Pearson Education, 2004.
+\item Oracle Database 11g The Complete Reference, Kevin Loney. McGraw-Hill, 2009. 
+\end{itemize}
+
+
+\section{Contenido}
+
+\begin{itemize}
+\item Introducción 
+\item Análisis de requerimientos 
+\item Diseño 
+\item Generación de código
+\item Pruebas y funcionamiento
+\item Conclusión
+\end{itemize}
+
+Cada uno de estos puntos serán desglosados en el reporte final.
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+\\
+
+
+\noindent
+\begin{tabular}{@{}p{3.0in}p{3.0in}@{}}
+  \hrulefill & \hrulefill \\
+  \centering María del Pilar Hernández Bastida & 
+  \centering Dra. Amparo López Gaona \\
+\end{tabular}
+
+
+\end{document}
